@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { DM_Sans, Russo_One } from "next/font/google";
 import "./globals.css";
+import HeroPage from "./hero/page";
+import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const russoOne = Russo_One({
+  variable: "--font-russo-one",
   subsets: ["latin"],
+  weight: ['400'],
 });
 
 export const metadata: Metadata = {
@@ -25,9 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${dmSans.variable} ${russoOne.variable} antialiased`}
       >
+        <HeroPage/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
