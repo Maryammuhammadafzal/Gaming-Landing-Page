@@ -10,8 +10,8 @@ const AboutPage = () => {
                 <div className='w-full h-full flex justify-center items-center z-10 '>
                     <Image src='/images/about-image.png' alt='about-image' width={446} height={240} />
                 </div>
-                <div className='absolute w-[440px] h-[240px] bg-[#FF6F00] rounded-2xl -rotate-[20deg] left-28'></div>
-                <div className='absolute w-[250px] h-[134px] bg-[#FF6F00] rounded-2xl rotate-[30deg] -bottom-6 right-30'></div>
+                <div className='absolute w-[440px] h-[240px] bg-[#FF6F00] rounded-2xl -rotate-[20deg] 2xl:left-28 xl:left-18 lg:left-10 left-0'></div>
+                <div className='absolute w-[250px] h-[134px] bg-[#FF6F00] rounded-2xl rotate-[30deg] -bottom-6 2xl:right-30 xl:right-20 lg:right-10 right-0'></div>
             </div>
 
             {/* Content */}
