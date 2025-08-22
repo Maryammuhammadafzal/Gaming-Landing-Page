@@ -121,6 +121,22 @@
   }
 }
 
-.letter-spacing {
+@theme {
+  --breakpoint-xs : 30rem;
+  --breakpoint-2xs : 25rem;
+}
+
+
+.letter-spacing-14 {
+  letter-spacing: 14px;
+}
+.letter-spacing-10 {
   letter-spacing: 10px;
+}
+
+.letter-spacing-7 {
+  letter-spacing: 7px;
+}
+.letter-spacing-4 {
+  letter-spacing: 4px;
 }
