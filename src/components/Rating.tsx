@@ -4,7 +4,7 @@ import React from 'react'
 const Rating = () => {
     return (
         <div className='w-full h-auto flex justify-center items-center p-10'>
-            <div className='bg-primary/50 w-full rounded-2xl h-[200px] flex justify-evenly items-center shadow-md shadow-[#FF6F00]/30'>
+            <div className='bg-primary/50 w-full rounded-2xl h-[200px] flex justify-evenly items-center shadow-md shadow-[#FF6F00]/20'>
                 <div className="w-auto h-auto text-secondary text-xl">
                     Over <span className='text-[#FF6F00] text-[32px] uppercase'> 500K <br /> </span> gamers worldwide</div>
                 <div className='w-auto flex justify-center items-center'>
