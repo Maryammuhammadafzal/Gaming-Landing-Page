@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dmSans.variable} ${russoOne.variable} antialiased p-1`}
+        className={`${dmSans.variable} ${russoOne.variable} antialiased p-3`}
       >
         <HeroPage/>
         {children}

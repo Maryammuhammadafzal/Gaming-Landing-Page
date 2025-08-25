@@ -9,11 +9,11 @@ const SponsorPage = () => {
         '💬 Discord & Telegram: Always Online'
     ]
     return (
-        <div className='w-full h-auto flex justify-center items-center px-3 lg:py-30 md:py-24 sm:py-18 xs:py-12 py-8'>
+        <div className='lg:w-[90%] mx-auto h-auto flex justify-center items-center px-3 lg:py-30 md:py-24 sm:py-18 xs:py-12 py-8'>
             {/* Content */}
             <div className='md:w-1/2 w-full h-full flex flex-col gap-3 md:pl-4 xs:pl-8 pt-4'>
                 <h2 className='font-mono xl:text-[40px] lg:text-4xl md:text-3xl xs:text-2xl text-xl xl:max-w-lg md:max-w-md max-w-xl md:pr-0 xs:pr-20'>
-                    Let’s Talk Gaming, Collabs, or Sponsorships
+                    Let's Talk Gaming, Collabs, or Sponsorships
                 </h2>
                 <p className='lg:text-lg md:text-base text-sm'>Whether you're a content creator, streamer, brand, or gamer — reach out.</p>
                 <ul className='py-6'>

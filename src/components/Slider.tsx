@@ -14,11 +14,11 @@ import { Button } from "./ui/button"
 export function Slider() {
 
     return (
-        <Carousel className="w-full max-w-5xl p-5 min-h-[550px]">
+        <Carousel className="w-full lg:max-w-4xl max-w-3xl p-5 min-h-[550px]">
             <CarouselContent>
                 {Array.from({ length: 5 }).map((_, index) => (
                     <CarouselItem key={index}>
-                        <div className="p-1 w-[85%] flex-col mx-auto min-h-[550px] flex ">
+                        <div className="p-1 lg:w-[85%] w-full flex-col mx-auto min-h-[550px] flex ">
                             <div className="w-full h-full relative flex justify-center">
                                 <div className="absolute left-0 top-10 w-auto h-auto">
                                     <Image src={'/images/card-image1.png'} alt="card-image" width={300} height={370} />
