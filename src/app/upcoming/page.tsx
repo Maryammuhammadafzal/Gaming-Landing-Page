@@ -4,7 +4,7 @@ import React from 'react'
 
 const UpcomingPage = () => {
     return (
-        <div className='w-full h-auto flex justify-center items-center sm:p-10 p-3'>
+        <div className='w-full h-auto flex justify-center items-center sm:p-10 lg:py-20 md:py-14 sm:py-8 py-4 p-3'>
             <div className='bg-primary/50 w-full rounded-2xl my-6 h-auto pb-20 flex justify-evenly items-center shadow-md shadow-[#FF6F00]/20'>
                 {/* Image */}
                 <div className='md:w-1/2 w-full relative h-full flex justify-center items-center'>
