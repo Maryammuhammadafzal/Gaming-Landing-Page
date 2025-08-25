@@ -1,49 +1,41 @@
-import { Button } from '@/components/ui/button'
-import { Card, CardContent } from '@/components/ui/card'
 import Image from 'next/image'
 import React from 'react'
 
 const FeaturesPage = () => {
-    const featuresData = [
-        {
-            icon: '🏆',
-            text: 'Monthly Showdowns'
-        },
-        {
-            icon: '💰',
-            text: 'Prize Pools from $5,000 to $100,000'
-        },
-        {
-            icon: '🎥',
-            text: ' Live Broadcasts with global shoutcasters'
-        },
-        {
-            icon: '💬',
-            text: 'Community-driven team formations'
-        }
 
+    const featuresData = [
+        'Ultra-fast servers',
+        'NFT-based inventory',
+        'Real-time voice chat',
+        'Community leaderboards'
     ]
+
     return (
-        <div className='w-full h-auto flex justify-center items-center flex-col gap-6 px-3 lg:py-30 md:py-24 sm:py-18 xs:py-12 py-8'>
-            <div className='head'>
-                <h2 className='font-mono xl:text-[40px] lg:text-4xl md:text-3xl xs:text-2xl text-xl py-10'>
-                    Climb the Ladder. <br />
-                    Claim the Crown.
+        <div className='w-full h-auto flex justify-center items-center px-3 lg:py-30 md:py-24 sm:py-18 xs:py-12 py-8'>
+            {/* Content */}
+            <div className='md:w-1/2 w-full h-full flex flex-col gap-3 md:pl-4 xs:pl-8 pt-4'>
+                <h2 className='font-mono xl:text-[40px] lg:text-4xl md:text-3xl xs:text-2xl text-xl xl:max-w-lg md:max-w-md max-w-xl md:pr-0 xs:pr-20'>
+                    Each game features:
                 </h2>
+                <p className='lg:text-lg md:text-base text-sm uppercase'>From high-octane FPS titles to sprawling MMORPGs, we fuse speed, design, and strategy to redefine the way you play.</p>
+
+                <ul className='mt-4'>
+                    {
+                        featuresData.map((feature, index) => (
+                            <li key={index} className={`${index % 2 === 0 ? 'pl-10' : 'pl-0'} uppercase w-fit rounded-4xl px-8 py-5 bg-gradient-to-r from-[#FF6F00] to-[#FB8A33] text-secondary font-semibold`}>{feature}</li>
+                        ))
+                    }
+                </ul>
             </div>
-            <div className="cards w-full h-auto flex justify-center items-center gap-4">
-                {featuresData.map((feature, index) => (
-                    <Card key={index} className='p-3 w-[245px] flex items-center h-[208px] rounded-md bg-transparent border border-[#FF6F00]'>
-                        <CardContent className='p-6 h-full gap-2 flex flex-col justify-center'>
-                            <p>
-                                {feature.icon}
-                            </p>
-                            <p className='text-secondary max-w-[190px] uppercase text-xl'>
-                                {feature.text}
-                            </p>
-                        </CardContent>
-                    </Card>
-                ))}
+
+            {/* Image */}
+            <div className='md:w-1/2 w-full md:pt-0 pt-20 relative h-full flex justify-center items-center'>
+                <div className='absolute w-full h-full flex justify-center items-center bottom-12'>
+                    <Image src='/images/feature-vector.png' alt='image' width={634} height={634} />
+                </div>
+                <div className='w-full h-full flex justify-center items-center z-10'>
+                    <Image src='/images/feature-image.png' alt='image' width={680} height={580} />
+                </div>
             </div>
         </div>
     )
