@@ -7,12 +7,14 @@ import EarnPage from "./earn/page";
 import UpcomingPage from "./upcoming/page";
 import FeaturesPage from "./features/page";
 import AwardsPage from "./awards/page";
+import ExplorePage from "./explore/page";
 
 export default function Home() {
   return (
     <>
       <AboutPage />
       <Rating />
+      <ExplorePage />
       <FeaturesPage/>
       <AwardsPage/>
       <UpcomingPage/>
