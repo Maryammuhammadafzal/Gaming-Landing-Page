@@ -11,10 +11,7 @@ const ExplorePage = () => {
                 </h2>
             </div>
             <div className="cards w-full h-auto flex justify-center items-center gap-4">
-<Slider/>
-            </div>
-            <div className='w-auto h-auto'>
-                <Button className='uppercase rounded-4xl px-8 py-5 bg-gradient-to-r from-[#FF6F00] to-[#FB8A33] text-secondary font-semibold'>Work With Us</Button>
+                <Slider />
             </div>
         </div>
     )
